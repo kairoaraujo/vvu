@@ -128,7 +128,7 @@ def findhdisk():
     inq.fileopen()
 
     # create file with results
-    wwn_hdisk = open("hdisk_wwn_%s" % (timestr), 'w')
+    wwn_hdisk = open("hdisk_wwn_%s.txt" % (timestr), 'w')
     print ("Creating file wwn_hdisk_%s" % (timestr))
 
     # two simples look to find entry on files
@@ -139,10 +139,11 @@ def findhdisk():
             if l_inq.startswith("/dev/rhdisk") and l_wwnlst.strip() == wwn[5].strip():
                 hdisk = wwn[0].split('/r')
                 print ("Added %s   \t %s" % (hdisk[1], wwn[5]))
-                wwn_hdisk.write("%s   \t %s.txt" % (hdisk[1], wwn[5]))
+                wwn_hdisk.write("%s   \t %s\n" % (hdisk[1], wwn[5]))
         inq.fileclose()
     wwnlst.fileclose()
     wwn_hdisk.close()
+    print ("File hdisk_wwn_%s.txt created with success!" % (timestr))
 
 # functions with help texts
 def helpmkvhostfile():
