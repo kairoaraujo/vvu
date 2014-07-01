@@ -34,34 +34,37 @@ United States, other countries, or both.
 Utilization
 ===========
 
-* Menu Options *
+## Menu Options 
 
 VIO VHOST UTILITY
-1. Make a vhostX.txt file with hdisks and lun hexa id from the EMC inq.
+
+1. Make a vhostX.txt file with hdisks and lun hexa id from the EMC inq.\n
 2. Find hdisks using a wwn files
 3. Show README (help and instructons)
 4. Quit
 
-* Options details *
+## Options details 
 
-1. Make a vhostX.txt file with hdisks and lun hexa id from the EMC inq.
+1 -  Make a vhostX.txt file with hdisks and lun hexa id from the EMC inq.
 
-     . The lsmap file is output of vio command  '$lsmap -all > lsmap.txt'
-     . The inq file is output of vio command using EMC inq: 'inq -xxx_wwn > inq.txt'
-       (xxx_wwn = clar_wwn, sym_wwn, etc... check inq -h)
+. The lsmap file is output of vio command  '$lsmap -all > lsmap.txt'
+. The inq file is output of vio command using EMC inq: 'inq -xxx_wwn > inq.txt'
+  (xxx_wwn = clar_wwn, sym_wwn, etc... check inq -h)
 
 
-2. Find hdisks using a wwn files
+2 - Find hdisks using a wwn files
 
-     . The wwn file is a simple file with wwns line by line
+. The wwn file is a simple file with wwns line by line
+
        Sample:
        600601605fd02900b369420ab5cedf11
        600601605fd029008a2dbc62b5cedf11
        600601605fd029005a4d44a5b4cedf11
        600601605fd02900347fb41ab9cedf11
        (...)
-     . The inq file is output of vio command using EMC inq: 'inq -xxx_wwn > inq.txt'
-       (xxx_wwn = clar_wwn, sym_wwn, etc... check inq -h)
+
+. The inq file is output of vio command using EMC inq: 'inq -xxx_wwn > inq.txt'
+  (xxx_wwn = clar_wwn, sym_wwn, etc... check inq -h)
        
 Screenshots
 ===========
