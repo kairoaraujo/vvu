@@ -31,6 +31,13 @@ the United States, other countries, or both.
 EMC, inq and emcgrab are registered trademarks of EMC Corporation in the
 United States, other countries, or both.
 
+Requirements
+============
+
+Python 3.2
+
+System Operation supported: Mac OS X, Linux, Windows and AIX
+
 Utilization
 ===========
 
@@ -45,14 +52,14 @@ VIO VHOST UTILITY
 
 ## Options details 
 
-1 -  Make a vhostX.txt file with hdisks and lun hexa id from the EMC inq.
+1.  Make a vhostX.txt file with hdisks and lun hexa id from the EMC inq.
 
 . The lsmap file is output of vio command  '$lsmap -all > lsmap.txt'
 . The inq file is output of vio command using EMC inq: 'inq -xxx_wwn > inq.txt'
   (xxx_wwn = clar_wwn, sym_wwn, etc... check inq -h)
 
 
-2 - Find hdisks using a wwn files
+2. Find hdisks using a wwn files
 
 . The wwn file is a simple file with wwns line by line
 
@@ -65,6 +72,14 @@ VIO VHOST UTILITY
 
 . The inq file is output of vio command using EMC inq: 'inq -xxx_wwn > inq.txt'
   (xxx_wwn = clar_wwn, sym_wwn, etc... check inq -h)
+  
+3. Show README (help and instructions)
+ 
+ . Show that output
+ 
+4. Quit
+
+ . Exit of program
        
 Screenshots
 ===========
